@@ -1,0 +1,55 @@
+/* Styles for the table container */
+.table-container {
+  margin: 20px auto;
+  max-width: 1200px;
+  padding: 20px;
+  background-color: #0c0404;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the table */
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Table caption styling */
+.table-container .chakra-table__caption {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: #2b6cb0;
+}
+
+/* Table header styling */
+.table-container th {
+  background-color: #2b6cb0;
+  color: #121212;
+  padding: 12px;
+  text-align: left;
+}
+
+/* Table row styling */
+.table-container tr:nth-of-type(odd) {
+  background-color: #0b0b0b;
+}
+
+.table-container tr:nth-of-type(even) {
+  background-color: #080505;
+}
+
+/* Table cell styling */
+.table-container td {
+  padding: 12px;
+  border-bottom: 1px solid #115abb;
+}
+
+/* Table hover effect */
+.table-container tr:hover {
+  background-color: #030c17;
+}
+
+/* Table striped rows styling */
+.table-container .chakra-table__tbody tr:nth-of-type(odd) {
+  background-color: #07151e;
+}

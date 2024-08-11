@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #4e2770, #c3cfe2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .form-container {
+    background:  #856d9a;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    animation: fadeIn 0.8s ease-out;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  chakra-formcontrol {
+    margin-bottom: 1.5rem;
+    position: relative;
+    animation: slideIn 0.5s ease-out;
+  }
+  
+  chakra-formlabel {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #ff6f61; /* Coral color */
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  chakra-input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    background: linear-gradient(90deg, rgba(255, 203, 203, 0.5), rgba(255, 203, 203, 0.2));
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  chakra-input:focus {
+    border-color: #ff6f61; /* Coral color */
+    box-shadow: 0 0 5px rgba(255, 111, 97, 0.5);
+    background: linear-gradient(90deg, rgba(255, 203, 203, 0.3), rgba(255, 203, 203, 0.1));
+  }
+  
+  chakra-formhelpertext {
+    font-size: 0.875rem;
+    color: #777;
+    position: absolute;
+    bottom: -1.5rem;
+    left: 0;
+    transition: opacity 0.3s, transform 0.3s;
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  
+  chakra-formcontrol:hover chakra-formhelpertext,
+  chakra-formcontrol:focus-within chakra-formhelpertext {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.form-container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+FormControl {
+  margin-bottom: 1.5rem;
+  position: relative;
+  animation: fadeIn 0.5s ease-out;
+}
+
+FormLabel {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+  transition: color 0.3s;
+}
+
+Input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+Input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+FormHelperText {
+  font-size: 0.875rem;
+  color: #666;
+  position: absolute;
+  bottom: -1.5rem;
+  left: 0;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+FormControl:hover FormHelperText,
+FormControl:focus-within FormHelperText {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
